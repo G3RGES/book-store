@@ -33,7 +33,7 @@ const Navbar = () => {
                   <a
                     href={menu.link}
                     className="inline-block py-4
-                  px-4 hover:text-primary"
+                  px-4 hover:text-primary duration-200"
                   >
                     {menu.name}
                   </a>
