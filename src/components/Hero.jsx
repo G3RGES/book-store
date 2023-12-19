@@ -55,7 +55,10 @@ const Hero = () => {
         <div className="container pb-8 sm:pb-0 ">
           <div className="grid grid-cols-1 sm:grid-cols-2">
             {/* text-content-section */}
-            <div>
+            <div
+              className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center 
+            sm:text-left order-2 sm:order-1"
+            >
               <h1
                 className="text-5xl sm:text-6xl lg:text-7xl 
                           font-bold "
@@ -85,12 +88,20 @@ const Hero = () => {
               className="min-h-[450px] flex justify-center
             items-center relative order-1 sm:order-2 "
             >
+              {/* main image */}
               <div
                 className="h-[300px] sm:h-[450px] 
               overflow-hidden flex justify-center items-center"
               >
-                <img src={imageId} alt="" />
+                <img
+                  src={imageId}
+                  alt=""
+                  className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-125 object-contain
+                  mx-auto  "
+                />
               </div>
+              {/*//* images list */}
+              <div></div>
             </div>
           </div>
         </div>
