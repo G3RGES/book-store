@@ -44,6 +44,14 @@ const Hero = () => {
     width: "100%",
   };
 
+  //! CAN'T GET THE FUNCTION TO WORK PROPERLY
+  // const setImage = () => {
+  //   setImageId(
+  //     ...imageId,
+  //     imageId === 1 ? Book1 : imageId === 2 ? Book2 : Book3
+  //   );
+  // };
+
   return (
     <>
       <div
@@ -100,8 +108,31 @@ const Hero = () => {
                   mx-auto  "
                 />
               </div>
-              {/*//* images list */}
-              <div></div>
+              {/* images list */}
+              <div
+                className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2
+              lg:py-2 justify-center gap-4 absolute -bottom-[40px] 
+              lg:-right-1 bg-white dark:bg-blue-950/10 rounded-full "
+              >
+                {ImageList.map((image) => (
+                  <img
+                    src={image.img}
+                    alt={image.title}
+                    key={image.id}
+                    className="max-w-[100px] h-[100px] object-contain
+                    inline-block hover:scale-110 duration-200"
+                    onClick={() => {
+                      setImageId(
+                        image.id === 1 ? Book1 : image.id === 2 ? Book2 : Book3
+                      );
+                      setTitle(image.title);
+                      setDescription(image.description);
+                      //! CAN'T GET IT TO WORK
+                      // setImage();
+                    }}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
