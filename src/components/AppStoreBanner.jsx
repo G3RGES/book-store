@@ -20,13 +20,24 @@ const AppStoreBanner = () => {
       style={bannerImg}
     >
       <div className="container">
-        <h1 className="text-2xl text-center sm:text-4xl font-semibold ">
-          Read books at your fingertips
-        </h1>
-        <div className="flex flex-wrap justify-center items-center gap-4">
-          <a href="#" className="">
-            <img className="" src="" />
-          </a>
+        <div className="space-y-6 max-w-xl mx-auto ">
+          <h1 className="text-2xl text-center sm:text-4xl font-semibold ">
+            Read books at your fingertips
+          </h1>
+          <div className="flex flex-wrap justify-center items-center gap-4">
+            <a href="#" className="">
+              <img
+                src={PlayStore}
+                className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px] "
+              />
+            </a>
+            <a href="#" className="">
+              <img
+                src={AppStore}
+                className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
