@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import BestBooks from "./components/BestBooks";
 import Banner from "./components/Banner";
 import AppStoreBanner from "./components/AppStoreBanner";
+import TopBooks from "./components/TopBooks";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <BestBooks />
         <Banner />
         <AppStoreBanner />
+        <TopBooks />
       </div>
     </>
   );
