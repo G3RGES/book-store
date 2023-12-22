@@ -24,6 +24,7 @@ const testimonialData = [
 ];
 
 const Testimonial = () => {
+  // slider config
   var settings = {
     dots: true,
     arrows: false,
@@ -64,7 +65,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div>
+    <div className="pb-10">
       <div className="container">
         {/* header */}
         <div className="text-center mb-20 max-w-[400px] mx-auto ">
@@ -81,7 +82,43 @@ const Testimonial = () => {
           </p>
         </div>
         {/* card section */}
-        <div className=""></div>
+        <div className="">
+          <Slider {...settings}>
+            {testimonialData.map((data) => (
+              <div key={data.id} className="my-6">
+                <div
+                  className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4
+                rounded-xl dark:bg-gray-800 bg-primary/10 relative "
+                >
+                  <div className="">
+                    <img
+                      className="rounded-full w-20 h-20 object-cover "
+                      src={data.img}
+                      alt={data.name}
+                    />
+                  </div>
+                  <div className="">
+                    <div className="">
+                      <p className="text-gray-500 text-sm ">{data.text}</p>
+                      <h1
+                        className="text-xl font-bold text-black/80
+                       dark:text-white"
+                      >
+                        {data.name}
+                      </h1>
+                    </div>
+                  </div>
+                  <p
+                    className="absolute top-0 right-0 font-serif text-9xl z-10
+                  text-black/20"
+                  >
+                    ,,
+                  </p>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );
