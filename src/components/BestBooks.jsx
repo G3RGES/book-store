@@ -75,14 +75,14 @@ const BestBooks = () => {
           {/* //* Book Cards Section  */}
           <div
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
-          md:gap-5 place-items-center"
+          md:gap-5 place-items-center "
           >
             {booksData.map((book) => (
               <div
                 key={book.id}
                 className="rounded-2xl bg-white dark:bg-gray-700/10 
               hover:bg-primary dark:hover:bg-primary hover:text-white
-              relative shadow-xl duration-500 group max-w-[300px]"
+              relative shadow-xl duration-500 group max-w-[300px] mt-12"
               >
                 <div className="h-[100px]  ">
                   <img
