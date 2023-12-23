@@ -52,7 +52,7 @@ const booksData = [
   //   },
 ];
 
-const BestBooks = () => {
+const BestBooks = ({ handleOrderPopup }) => {
   return (
     <>
       <div className="py-10 ">
@@ -112,6 +112,7 @@ const BestBooks = () => {
                   px-4 py-2 rounded-full mt-4 hover:scale-105 duration-200
                    group-hover:bg-white
                   group-hover:text-primary"
+                    onClick={handleOrderPopup}
                   >
                     Order Now
                   </button>
