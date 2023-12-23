@@ -50,7 +50,10 @@ const TopBooks = () => {
       <div className="py-3">
         <div className="container py-10 ">
           {/* header */}
-          <div className="text-center mb-20 max-w-[400px] mx-auto ">
+          <div
+            data-aos="slide-up"
+            className="text-center mb-20 max-w-[400px] mx-auto "
+          >
             <p
               className="text-sm bg-clip-text text-transparent bg-gradient-to-r 
                   from-primary to-secondary "
@@ -64,7 +67,7 @@ const TopBooks = () => {
             </p>
           </div>
           {/* card */}
-          <div className="">
+          <div data-aos="slide-up" className="">
             <div
               className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4
           lg:grid-cols-5 place-items-center gap-5"
