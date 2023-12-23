@@ -44,7 +44,7 @@ const App = () => {
         <TopBooks />
         <Testimonial />
         <Footer />
-        <Popup handleOrderPopup={handleOrderPopup} />
+        <Popup handleOrderPopup={handleOrderPopup} orderPopup={orderPopup} />
       </div>
     </>
   );
