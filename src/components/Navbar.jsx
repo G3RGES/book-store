@@ -36,7 +36,7 @@ const DropdownLinks = [
   },
 ];
 
-const Navbar = () => {
+const Navbar = ({ handleOrderPopup }) => {
   return (
     <div
       className="shadow-lg bg-white dark:bg-gray-900 dark:text-white 
@@ -100,6 +100,7 @@ const Navbar = () => {
              from-primary to-secondary
               text-white px-4 py-1 rounded-full flex items-center gap-3
               hover:scale-105 duration-300"
+              onClick={handleOrderPopup}
             >
               Order
               <CiShoppingCart
