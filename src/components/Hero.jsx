@@ -68,20 +68,32 @@ const Hero = () => {
             sm:text-left order-2 sm:order-1"
             >
               <h1
-                className="text-5xl sm:text-6xl lg:text-7xl 
-                          font-bold "
+                data-aos="zoom-out"
+                data-aos-duration="500"
+                className="text-5xl sm:text-6xl lg:text-7xl font-bold "
               >
                 {title}
                 <p
+                  data-aos="slide-up"
+                  data-aos-duration="500"
+                  data-aos-delay="100"
                   className="bg-clip-text text-right text-transparent bg-gradient-to-b
                 from-primary to-secondary  text-sm"
                 >
                   by Anonymous
                 </p>
               </h1>
-              <p className="text-sm ">{description}</p>
+              <p
+                data-aos="slide-up"
+                data-aos-duration="500"
+                data-aos-delay="100"
+                className="text-sm "
+              >
+                {description}
+              </p>
               <div>
                 <button
+                  data-aos="zoom-in"
                   className="bg-gradient-to-tr
                  from-primary to-secondary rounded-full 
                  px-4 py-2 mt-4 text-white hover:scale-110 
@@ -102,6 +114,8 @@ const Hero = () => {
               overflow-hidden flex justify-center items-center"
               >
                 <img
+                  data-aos="zoom-in"
+                  data-aos-once="true"
                   src={imageId}
                   alt=""
                   className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-125 object-contain
@@ -116,6 +130,8 @@ const Hero = () => {
               >
                 {ImageList.map((image) => (
                   <img
+                    data-aos="zoom-in"
+                    data-aos-once="true"
                     src={image.img}
                     alt={image.title}
                     key={image.id}
