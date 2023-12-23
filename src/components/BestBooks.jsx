@@ -79,6 +79,7 @@ const BestBooks = () => {
           >
             {booksData.map((book) => (
               <div
+                data-aos="zoom-in"
                 key={book.id}
                 className="rounded-2xl bg-white dark:bg-gray-700/10 
               hover:bg-primary dark:hover:bg-primary hover:text-white
